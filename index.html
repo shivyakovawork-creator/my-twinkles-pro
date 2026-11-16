@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Юлия — маркетолог-купидон</title>
+<meta property="og:title" content="Юлия — маркетолог-купидон">
+<meta property="og:description" content="Воронки, которые приводят заявки на органическом трафике. Анкета на консультацию.">
+<meta property="og:image" content="https://my-twinkles.pro/img/hero.jpg">
+<meta name="description" content="Воронки продаж для экспертов без рекламного бюджета. Консультация 5 000 ₽ — разбор вашей воронки и карта узких мест.">
+<link href="fonts-free/montserrat.css" rel="stylesheet">
+<style>
+:root{
+  --bordo:#7A1730; --bordo-2:#94203f; --bordo-dark:#3d0a17; --night:#1a0a0f;
+  --cream:#FBF4EE; --paper:#fff; --ink:#1d1416; --muted:#7a666a; --line:#ecdcd5;
+  --pink:#f6d7de; --hot:#ff4f7b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{background:var(--cream);color:var(--ink);font:500 17px/1.55 "Montserrat",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:var(--bordo)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.it{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-weight:400;letter-spacing:0}
+h1,h2,h3{font-weight:900;line-height:1;letter-spacing:-.015em}
+h2{font-size:clamp(36px,6.4vw,68px);margin-bottom:20px}
+h2 .it{color:var(--bordo)}
+section{padding:96px 0;position:relative}
+.kicker{display:inline-flex;gap:8px;align-items:center;font-size:14px;text-transform:uppercase;letter-spacing:.12em;color:var(--bordo);margin-bottom:16px}
+.kicker::before{content:"";width:28px;height:2px;background:currentColor}
+.lead{font-size:20px;max-width:680px;color:var(--muted)}
+.btn{position:relative;display:inline-flex;align-items:center;gap:10px;background:var(--bordo);color:#fff;text-decoration:none;font:900 17px/1 "Montserrat",sans-serif;padding:20px 30px;border-radius:999px;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 10px 30px rgba(122,23,48,.35)}
+.btn:hover{box-shadow:0 16px 40px rgba(122,23,48,.45)}
+.btn .h{display:inline-block;animation:beat 1.2s infinite}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.3)}30%{transform:scale(1)}45%{transform:scale(1.2)}}
+.btn.ghost{background:transparent;color:var(--bordo);border:2px solid var(--bordo);box-shadow:none}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(40px)}
+.rv{transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}.rv.d4{transition-delay:.4s}
+
+/* ---------- HERO ---------- */
+.hero{background:radial-gradient(1200px 700px at 80% 20%,var(--bordo-2),var(--bordo) 45%,var(--bordo-dark));color:#fff;padding:0;overflow:hidden;min-height:100vh;display:flex;align-items:center}
+.hero::after{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.07'/%3E%3C/svg%3E");pointer-events:none;mix-blend-mode:overlay}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-top:60px;padding-bottom:60px;position:relative;z-index:2;width:100%}
+.tag{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:8px 16px;font-size:14px;margin-bottom:28px;backdrop-filter:blur(6px);background:rgba(255,255,255,.06)}
+.tag i{width:8px;height:8px;border-radius:50%;background:#7dffa8;box-shadow:0 0 0 0 rgba(125,255,168,.7);animation:ping 1.8s infinite;font-style:normal}
+@keyframes ping{70%{box-shadow:0 0 0 10px rgba(125,255,168,0)}100%{box-shadow:0 0 0 0 rgba(125,255,168,0)}}
+.hero h1{font-size:clamp(40px,7.6vw,96px)}
+.hero h1 .line{display:block;overflow:hidden}
+.hero h1 .line>span{display:inline-block;transform:translateY(110%);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
+.hero h1 .line:nth-child(2)>span{animation-delay:.12s}
+.hero h1 .line:nth-child(3)>span{animation-delay:.24s}
+@keyframes up{to{transform:none}}
+.rot{color:#ffb8c8;display:inline-block;min-width:4ch;border-bottom:4px solid #ffb8c8}
+.rot.swap{animation:swap .5s}
+@keyframes swap{0%{opacity:0;transform:translateY(20px) rotate(-3deg)}100%{opacity:1;transform:none}}
+.hero .sub{font-size:20px;max-width:540px;margin:30px 0 38px;color:#f7e1e6;opacity:0;animation:fade 1s .6s forwards}
+.hero .cta{opacity:0;animation:fade 1s .8s forwards;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.hero .cta small{color:#f3c6d0;font-size:15px}
+@keyframes fade{to{opacity:1}}
+.hero .btn{background:#fff;color:var(--bordo);box-shadow:0 10px 40px rgba(0,0,0,.3)}
+.hero-photo{position:relative;opacity:0;animation:pop 1.1s .3s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes pop{from{opacity:0;transform:scale(.9) rotate(3deg)}to{opacity:1;transform:none}}
+.hero-photo .ph{border-radius:28px;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,.4);aspect-ratio:4/5}
+.hero-photo .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;transform:scale(1.08);transition:transform .2s linear}
+.badge-rot{position:absolute;top:-34px;left:-40px;width:150px;height:150px;animation:spin 16s linear infinite}
+.badge-rot text{font:900 13.5px "Montserrat";letter-spacing:3px;fill:#fff;text-transform:uppercase}
+.badge-rot+.badge-c{position:absolute;top:13px;left:7px;width:56px;height:56px;display:grid;place-items:center;font-size:34px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.sticker{position:absolute;background:#fff;color:var(--ink);border-radius:18px;padding:12px 16px;font-size:15px;line-height:1.25;box-shadow:0 14px 34px rgba(0,0,0,.25);animation:float 5s ease-in-out infinite}
+.sticker b{font-weight:900;color:var(--bordo);font-size:22px;display:block}
+.sticker.s1{right:-24px;top:-22px;transform:rotate(4deg)}
+.sticker.s2{left:-36px;bottom:12%;animation-delay:-2.5s;transform:rotate(-5deg)}
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -12px}}
+.hearts{position:absolute;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.hearts span{position:absolute;bottom:-40px;font-size:22px;opacity:.0;animation:rise linear infinite}
+@keyframes rise{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:.55}100%{transform:translateY(-110vh) rotate(40deg);opacity:0}}
+.arrow-fly{position:absolute;z-index:3;top:32%;left:-160px;font-size:54px;animation:fly 1.6s 1.2s cubic-bezier(.5,0,.3,1) forwards;filter:drop-shadow(0 6px 10px rgba(0,0,0,.3))}
+@keyframes fly{to{left:58%;opacity:0}}
+.scroll-hint{position:absolute;bottom:22px;left:50%;translate:-50% 0;z-index:3;color:#f3c6d0;font-size:13px;letter-spacing:.15em;text-transform:uppercase;animation:bob 2s infinite}
+@keyframes bob{50%{translate:-50% 8px}}
+
+/* marquee */
+.marq{background:var(--night);color:#fff;overflow:hidden;margin:0;position:relative;z-index:5;border-top:3px solid var(--hot);border-bottom:3px solid var(--hot)}
+.marq .track{display:flex;width:max-content;animation:mq 28s linear infinite}
+.marq span{font:900 clamp(22px,3vw,34px)/1 "Montserrat";padding:22px 26px;white-space:nowrap}
+.marq span.it{font-weight:400;color:#ffb8c8}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* numbers */
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.num{background:var(--paper);border:1px solid var(--line);border-radius:26px;padding:28px 22px;transition:transform .3s,box-shadow .3s}
+.num:hover{box-shadow:0 20px 40px rgba(122,23,48,.14);border-color:var(--bordo)}
+.num b{display:block;font-weight:900;font-size:clamp(38px,4.6vw,56px);color:var(--bordo);line-height:1}
+.num>span{display:block;margin-top:12px;color:var(--muted);font-size:15px;line-height:1.35}
+
+/* dictionary flip cards */
+.dict{background:var(--night);color:#fff;overflow:hidden}
+.dict h2 .it{color:#ffb8c8}
+.dict .lead{color:#c9b1b7}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px;perspective:1200px}
+.flip{height:260px;cursor:pointer;position:relative;perspective:1200px}
+.flip .fi{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.flip.on .fi{transform:rotateY(180deg)}
+@media (hover:hover){.flip:hover .fi{transform:rotateY(180deg)}}
+.flip .fi>div{position:absolute;inset:0;border-radius:24px;padding:24px;backface-visibility:hidden;display:flex;flex-direction:column;justify-content:space-between}
+.flip .fr{background:linear-gradient(160deg,#2d1219,#21090f);border:1px solid #4a1c28}
+.flip .bk{background:var(--bordo);transform:rotateY(180deg)}
+.flip .em{font-size:44px}
+.flip h3{font-size:24px;line-height:1.1}
+.flip .fr small,.flip .bk small{font-size:13px;opacity:.7;text-transform:uppercase;letter-spacing:.1em}
+.flip .bk p{font-size:17px;line-height:1.4}
+.flip .bk h3{font-family:Georgia,serif;font-style:italic;font-weight:400;font-size:28px}
+.tap{color:#c9b1b7;font-size:14px;margin-top:18px}
+
+/* case */
+.case-head{display:flex;justify-content:space-between;gap:30px;align-items:end;flex-wrap:wrap;margin-bottom:40px}
+.chip{display:inline-block;background:var(--pink);color:var(--bordo);border-radius:999px;padding:8px 14px;font-weight:900;font-size:14px;margin:0 6px 8px 0}
+.acts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:28px}
+.act{border-radius:26px;padding:28px;background:var(--paper);border:1px solid var(--line)}
+.act .lbl{font:900 13px "Montserrat";text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:12px}
+.act h3{font-size:24px;margin-bottom:12px;line-height:1.1}
+.act p,.act li{color:var(--muted);font-size:16px}
+.act ul{list-style:none}
+.act li{padding:6px 0 6px 26px;position:relative}
+.act li::before{content:"→";position:absolute;left:0;color:var(--bordo);font-weight:900}
+.act.hot{background:var(--bordo);color:#fff;border:0}
+.act.hot .lbl{color:#ffb8c8}
+.act.hot p,.act.hot li{color:#f6dfe4}
+.act.hot li::before{color:#ffb8c8}
+.big{font:900 clamp(40px,5vw,60px)/1 "Montserrat";color:#fff}
+.big small{font-size:.4em;color:#ffb8c8;display:block;margin-top:6px;font-family:Georgia,serif;font-style:italic;font-weight:400}
+
+/* before-after */
+.ba-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;margin:20px 0 34px}
+.ba{position:relative;border-radius:24px;overflow:hidden;aspect-ratio:1184/980;background:#fff;border:1px solid var(--line);user-select:none;touch-action:pan-y;box-shadow:0 30px 60px rgba(122,23,48,.15)}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
+.ba .top{clip-path:inset(0 50% 0 0)}
+.ba .bar{position:absolute;top:0;bottom:0;left:50%;width:4px;background:var(--bordo);translate:-2px 0}
+.ba .knob{position:absolute;top:50%;left:50%;translate:-50% -50%;width:56px;height:56px;border-radius:50%;background:var(--bordo);color:#fff;display:grid;place-items:center;font-weight:900;box-shadow:0 8px 20px rgba(0,0,0,.25);cursor:ew-resize}
+.ba .l,.ba .r{position:absolute;top:14px;padding:6px 12px;border-radius:999px;font:900 13px "Montserrat";background:rgba(29,20,22,.85);color:#fff}
+.ba .l{left:14px}.ba .r{right:14px;background:var(--bordo)}
+.ba-side h3{font-size:30px;margin-bottom:14px}
+.ba-side p{color:var(--muted);margin-bottom:14px}
+.ba-side .delta{font:900 64px/1 "Montserrat";color:var(--bordo)}
+
+/* strip */
+.strip{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 20px 30px;margin:0 -20px;cursor:grab;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.shot{flex:0 0 auto;display:flex;flex-direction:column;width:min-content;scroll-snap-align:start;background:#fff;border-radius:24px;padding:10px 10px 16px;box-shadow:0 20px 40px rgba(122,23,48,.12);border:1px solid var(--line)}
+.shot img{height:420px;width:auto;max-width:none;border-radius:16px;transition:transform .4s}
+.shot.wide img{height:300px}
+.shot:hover img{transform:scale(1.02)}
+.shot .cap{padding:14px 6px 0;font-size:15px;line-height:1.3;color:var(--muted)}
+.shot .cap b{display:block;font:900 26px/1 "Montserrat",sans-serif;color:var(--bordo);margin-bottom:4px}
+.hint{color:var(--muted);font-size:14px}
+
+/* italy */
+.italy{background:linear-gradient(180deg,var(--cream),#f7e5e3)}
+.fan{position:relative;height:560px}
+.fan .p{position:absolute;width:240px;border-radius:30px;overflow:hidden;border:8px solid var(--night);box-shadow:0 30px 60px rgba(0,0,0,.25);transition:transform 1s cubic-bezier(.2,.8,.2,1)}
+.fan .p img{width:100%}
+.fan .p1{left:6%;top:60px;transform:rotate(-8deg)}
+.fan .p2{left:34%;top:0;z-index:2}
+.fan .p3{left:62%;top:60px;transform:rotate(8deg)}
+.js .fan:not(.in) .p1{transform:rotate(-10deg) translateY(60px)}
+.js .fan:not(.in) .p2{transform:translateY(80px)}
+.js .fan:not(.in) .p3{transform:rotate(10deg) translateY(60px)}
+.ital-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:40px;align-items:center}
+.stat-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+.stat{background:#fff;border-radius:22px;padding:20px;border:1px solid var(--line)}
+.stat b{font:900 34px/1 "Montserrat";color:var(--bordo);display:block}
+.stat>span{font-size:14px;color:var(--muted)}
+
+/* reviews */
+.revs{background:var(--night);color:#fff;overflow:hidden}
+.revs h2 .it{color:#ffb8c8}
+.revs .lead{color:#c9b1b7}
+.rev-top{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;margin-bottom:46px}
+.phone{width:240px;border-radius:38px;border:10px solid #000;overflow:hidden;box-shadow:0 0 0 2px #3a2a2e,0 30px 60px rgba(0,0,0,.5);position:relative;rotate:4deg;aspect-ratio:591/1280;background:#111}
+.phone .notch{position:absolute;top:6px;left:50%;translate:-50% 0;width:70px;height:20px;border-radius:12px;background:#000;z-index:3}
+.phone .sl{position:absolute;inset:0;display:flex;width:500%;animation:slides 17.5s infinite}
+.phone .sl img{width:20%;height:100%;object-fit:cover;object-position:top}
+@keyframes slides{0%,16%{transform:translateX(0)}20%,36%{transform:translateX(-20%)}40%,56%{transform:translateX(-40%)}60%,76%{transform:translateX(-60%)}80%,96%{transform:translateX(-80%)}100%{transform:translateX(0)}}
+.phone .dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:3}
+.phone .dots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.4);animation:dot 17.5s infinite}
+.phone .dots i:nth-child(2){animation-delay:3.5s}.phone .dots i:nth-child(3){animation-delay:7s}.phone .dots i:nth-child(4){animation-delay:10.5s}.phone .dots i:nth-child(5){animation-delay:14s}
+@keyframes dot{0%,19%{background:#fff;transform:scale(1.3)}20%,100%{background:rgba(255,255,255,.4);transform:none}}
+.phone-cap{text-align:center;color:#c9b1b7;font-size:14px;margin-top:18px}
+.rating{position:relative;margin-top:26px;max-width:560px;border-radius:18px;overflow:hidden;background:#fff}
+.rating img{width:100%}
+.rating .circ{position:absolute;left:24%;top:68%;width:40%;height:30%;border:3px solid var(--hot);border-radius:50%;transform:rotate(-4deg);transition:all .6s .4s cubic-bezier(.2,.8,.2,1)}
+.js .rating:not(.in) .circ{transform:rotate(-4deg) scale(.6);opacity:0}
+.rating .me{position:absolute;right:10px;top:8px;background:var(--hot);color:#fff;font:900 14px "Montserrat";border-radius:999px;padding:6px 12px;rotate:6deg}
+.row{display:flex;gap:16px;width:max-content;margin-bottom:16px;animation:mq 60s linear infinite}
+.row.rev{animation-direction:reverse;animation-duration:70s}
+.revs:hover .row{animation-play-state:paused}
+.row img{height:220px;width:auto;border-radius:18px;cursor:zoom-in;transition:box-shadow .3s,outline-color .3s;outline:3px solid transparent}
+.row img:hover{outline-color:var(--hot)}
+.lb{position:fixed;inset:0;background:rgba(10,4,6,.9);display:none;place-items:center;z-index:100;padding:20px;cursor:zoom-out}
+.lb.on{display:grid}
+.lb img{max-height:88vh;max-width:min(92vw,760px);border-radius:16px}
+
+/* how */
+.steps{position:relative;margin-top:30px}
+.steps::before{content:"";position:absolute;left:31px;top:10px;bottom:10px;width:3px;background:var(--line)}
+.steps .fill{position:absolute;left:31px;top:10px;width:3px;background:var(--bordo);height:0;transition:height .2s linear}
+.step{display:grid;grid-template-columns:64px 1fr;gap:20px;padding:20px 0;position:relative}
+.step .n{width:64px;height:64px;border-radius:50%;background:var(--paper);border:3px solid var(--bordo);color:var(--bordo);display:grid;place-items:center;font-weight:900;font-size:24px;position:relative;z-index:1;transition:all .4s}
+.step.in .n{background:var(--bordo);color:#fff}
+.step h3{font-size:26px;margin:6px 0 8px}
+.step p{color:var(--muted)}
+.price{display:inline-block;background:var(--bordo);color:#fff;border-radius:12px;padding:2px 10px;rotate:-2deg}
+.how-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:start}
+.how-photo{position:sticky;top:30px}
+.how-photo img{border-radius:28px;aspect-ratio:3/4;object-fit:cover;width:100%}
+.quote{margin-top:20px;background:var(--bordo);color:#fff;border-radius:24px;padding:26px 28px;font-size:22px;line-height:1.35;position:relative}
+.quote::before{content:"“";position:absolute;top:-30px;left:18px;font:400 110px/1 Georgia;color:var(--hot)}
+.quote small{display:block;font:500 15px/1.4 "Montserrat";color:#ffc9d5;margin-top:12px}
+.honest{margin-top:16px;border:2px dashed #dcc3bc;border-radius:24px;padding:20px 24px;color:var(--muted)}
+.honest b{color:var(--ink)}
+
+/* form */
+.form-sec{background:radial-gradient(900px 500px at 10% 0%,#f9dfe5,var(--cream) 60%)}
+.form-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:start}
+form{background:var(--paper);border-radius:30px;padding:34px;border:1px solid var(--line);box-shadow:0 30px 60px rgba(122,23,48,.1);position:relative}
+.prog{height:6px;background:var(--line);border-radius:6px;margin-bottom:26px;overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--bordo),var(--hot));transition:width .4s}
+.field{margin-bottom:22px}
+.q{display:block;font-weight:900;font-size:18px;margin-bottom:10px}
+.q small{font-weight:500;color:var(--muted);font-size:15px}
+input[type=text],textarea{width:100%;border:1.5px solid var(--line);background:var(--cream);border-radius:16px;padding:15px 17px;font:500 16px/1.4 "Montserrat",sans-serif;color:var(--ink);outline:none;transition:all .2s}
+input[type=text]:focus,textarea:focus{border-color:var(--bordo);background:#fff;box-shadow:0 0 0 4px rgba(122,23,48,.1)}
+textarea{min-height:96px;resize:vertical}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{cursor:pointer}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips span{display:inline-block;padding:11px 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--cream);font-size:15px;transition:all .15s}
+.chips span:hover{border-color:var(--bordo)}
+.chips input:checked+span{background:var(--bordo);color:#fff;border-color:var(--bordo);transform:scale(1.05)}
+.chips input:focus-visible+span{outline:2px solid var(--bordo);outline-offset:2px}
+.agree{display:flex;gap:10px;font-size:14px;color:var(--muted);margin:6px 0 22px;align-items:flex-start}
+.agree input{margin-top:3px;accent-color:var(--bordo)}
+.err{color:var(--bordo);font-size:14px;margin:-10px 0 14px;display:none}
+.side{position:sticky;top:30px}
+.side img{border-radius:28px;aspect-ratio:4/5;object-fit:cover;width:100%;margin-bottom:18px}
+.side .card{background:var(--bordo);color:#fff;border-radius:24px;padding:24px 26px}
+.side .card h3{font-size:22px;margin-bottom:12px}
+.side .card ol{padding-left:20px}
+.side .card li{margin:7px 0;color:#f6dfe4}
+.done{display:none;text-align:center;padding:30px 10px}
+.done .bigh{font-size:72px;animation:beat 1.2s infinite;display:inline-block}
+.done h3{font-size:32px;margin:12px 0}
+.done p{color:var(--muted);margin-bottom:24px}
+.done .btns{display:flex;flex-direction:column;gap:12px;align-items:center}
+.burst{position:fixed;pointer-events:none;z-index:200;font-size:24px;animation:burst 1.4s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes burst{to{transform:translate(var(--x),var(--y)) rotate(var(--r));opacity:0}}
+
+footer{background:var(--night);color:#d9c9cc;padding:46px 0;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:#fff}
+.mob-cta{display:none}
+
+@media (max-width:900px){
+  section{padding:72px 0}
+  .hero .wrap{grid-template-columns:1fr;gap:56px;padding-top:40px}
+  .hero-photo{max-width:340px;margin:0 auto;width:86%}
+  .sticker.s1{right:-18px}.sticker.s2{left:-22px}
+  .badge-rot{width:120px;height:120px;left:-26px;top:-26px}
+  .badge-rot+.badge-c{top:10px;left:6px;font-size:28px;width:48px;height:48px}
+  .nums,.cards{grid-template-columns:1fr 1fr}
+  .flip{height:240px}
+  .acts,.ba-wrap,.ital-grid,.how-grid,.form-grid,.rev-top{grid-template-columns:1fr}
+  .fan{height:420px}
+  .fan .p{width:170px}
+  .fan .p1{left:0}.fan .p2{left:calc(50% - 85px)}.fan .p3{left:auto;right:0}
+  .shot img{height:340px}.shot.wide img{height:220px}
+  .phone{margin:0 auto}
+  .how-photo{display:none}
+  .side{position:static;order:-1}
+  .side img{display:none}
+  form{padding:22px}
+  .row img{height:170px}
+  .mob-cta{display:flex;position:fixed;left:16px;right:16px;bottom:14px;z-index:50;justify-content:center;transform:translateY(120%);transition:transform .4s}
+  .mob-cta.on{transform:none}
+}
+@media (max-width:600px){.flip{height:280px}.flip .fi>div{padding:16px 14px;justify-content:flex-start;gap:8px}.flip .fr{justify-content:space-between!important}.flip h3{font-size:19px}.flip .bk h3{font-size:21px}.flip .bk p{font-size:13.5px;line-height:1.4}.flip .fr small,.flip .bk small{font-size:11px}.flip .em{font-size:36px}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv,.hero h1 .line>span,.hero .sub,.hero .cta,.hero-photo{opacity:1!important;transform:none!important}
+  .arrow-fly,.hearts{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hearts" id="hearts"></div>
+  <div class="arrow-fly">🏹</div>
+  <div class="wrap">
+    <div>
+      <span class="tag">Юлия · маркетолог-купидон 🏹</span>
+      <h1>
+        <span class="line"><span>Знакомлю</span></span>
+        <span class="line"><span><span class="rot" id="rot">экспертов</span></span></span>
+        <span class="line"><span>с клиентами</span></span>
+      </h1>
+      <p class="sub">Создаю воронки, которые приводят заявки <span class="it">на органическом трафике</span> — без рекламного бюджета. За 1,5 часа посмотрим, откуда к вам приходят клиенты и на каком шаге они уходят. Вы получите практичную схему и 3–5 мест, где теряются деньги, и поймёте, с чего начать.</p>
+      <div class="cta">
+        <a class="btn" href="#anketa">Хочу на консультацию <span class="h">💘</span></a>
+        <small>5 000 ₽ · ~1,5 часа</small>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <svg class="badge-rot" viewBox="0 0 150 150" aria-hidden="true"><defs><path id="c" d="M75,75 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/></defs><text><textPath href="#c" textLength="360">воронки продаж · купидон · 🏹 ·</textPath></text></svg>
+      <div class="badge-c">💘</div>
+      <div class="ph"><img id="heroImg" src="img/hero.jpg" alt="Юлия, маркетолог"></div>
+      <div class="sticker s1"><b>2000+</b>сессий по воронкам</div>
+      <div class="sticker s2"><b>2 года</b>бизнес-тренер по маркетингу<br>в компании Михаила Дашкиева</div>
+    </div>
+  </div>
+</section>
+
+<div class="marq" aria-hidden="true"><div class="track" id="mq">
+  <span>2000+ сессий</span><span class="it">✦</span><span>40+ ниш</span><span class="it">✦</span><span>0 ₽ на рекламу</span><span class="it">✦</span><span>30+ лид-магнитов</span><span class="it">✦</span><span>бизнес-тренер в компании Михаила Дашкиева</span><span class="it">✦</span><span class="it">от первого лайка до оплаты</span><span class="it">✦</span>
+
+  <span>2000+ сессий</span><span class="it">✦</span><span>40+ ниш</span><span class="it">✦</span><span>0 ₽ на рекламу</span><span class="it">✦</span><span>30+ лид-магнитов</span><span class="it">✦</span><span>бизнес-тренер в компании Михаила Дашкиева</span><span class="it">✦</span><span class="it">от первого лайка до оплаты</span><span class="it">✦</span>
+</div></div>
+
+<!-- WHY -->
+<section>
+  <div class="wrap">
+    <div class="kicker rv">кто я</div>
+    <h2 class="rv">Почему мне <span class="it">можно верить</span></h2>
+    <p class="lead rv d1">7 лет делаю маркетинг руками: стратегия, боты, Telegram, Instagram, сайты. Два года была бизнес-тренером по маркетингу у Михаила Дашкиева — рисовала воронки юристам, строителям, школам и ещё куче ниш. Главный вывод: <b>ниша не важна, важно понимать, как продавать.</b></p>
+    <div class="nums">
+      <div class="num rv"><b data-count="2000" data-suf="+">2 000+</b><span>двухчасовых сессий по воронкам и продажам</span></div>
+      <div class="num rv d1"><b data-count="40" data-suf="+">40+</b><span>ниш: юристы, стройка, школы, услуги…</span></div>
+      <div class="num rv d2"><b><span data-count="2">2</span> года</b><span>бизнес-тренером по маркетингу в компании Михаила Дашкиева</span></div>
+      <div class="num rv d3"><b data-count="90" data-suf="%">90%</b><span>трафика привожу из органики, без платной рекламы</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- DICTIONARY -->
+<section class="dict">
+  <div class="wrap">
+    <div class="kicker rv" style="color:#ffb8c8">словарь купидона</div>
+    <h2 class="rv">Воронка продаж — <span class="it">это свидание</span></h2>
+    <p class="lead rv d1">Всё, что бесит в дейтинге, у вас происходит и в продажах. Переверни карточку 👇</p>
+    <div class="cards">
+      <div class="flip rv"><div class="fi"><div class="fr"><small>в свиданиях</small><div class="em">👻</div><h3>Гостинг</h3></div><div class="bk"><small>в продажах</small><h3>Слив воронки</h3><p>Человек скачал лид-магнит и пропал. Значит, после первого шага ему не дали второй.</p></div></div></div>
+      <div class="flip rv d1"><div class="fi"><div class="fr"><small>в свиданиях</small><div class="em">🤔</div><h3>«Я подумаю»</h3></div><div class="bk"><small>в продажах</small><h3>Дорого</h3><p>Ценность не дожали. Не убедили, что это стоит своих денег.</p></div></div></div>
+      <div class="flip rv d2"><div class="fi"><div class="fr"><small>в свиданиях</small><div class="em">📱</div><h3>Бывший пишет через полгода</h3></div><div class="bk"><small>в продажах</small><h3>Реактивация базы</h3><p>Старые подписчики и заявки — тоже деньги, если им вовремя написать.</p></div></div></div>
+      <div class="flip rv d3"><div class="fi"><div class="fr"><small>в свиданиях</small><div class="em">👩‍👧</div><h3>Знакомство с мамой</h3></div><div class="bk"><small>в продажах</small><h3>Кросс-сейл</h3><p>Клиент уже доверяет — самое время показать ему следующий продукт.</p></div></div></div>
+    </div>
+    <p class="tap">на телефоне — просто нажми на карточку</p>
+  </div>
+</section>
+
+<!-- CASE 1 -->
+<section id="cases">
+  <div class="wrap">
+    <div class="case-head">
+      <div>
+        <div class="kicker rv">кейс №1 · коротко</div>
+        <h2 class="rv">Строительный консалтинг: <span class="it">9 873 → 30,8 тыс.</span></h2>
+        <div class="rv d1"><span class="chip">чек 250–900 тыс. ₽</span><span class="chip">ни рубля на рекламу</span><span class="chip">клиенты — владельцы стройкомпаний</span></div>
+      </div>
+      <a class="btn ghost rv" href="https://vc.ru/marketing/3070400-voronka-prodazh-dlya-konsaltinga-bez-budjeta-na-reklamu" target="_blank" rel="noopener">Полный разбор на vc.ru ↗</a>
+    </div>
+
+    <div class="acts">
+      <div class="act rv"><div class="lbl">было 😬</div><h3>Один лид-магнит на всех</h3><p>Видео на 20 минут, а SMM-щик вручную спрашивал в директе: «ну как, зашло видео?»</p></div>
+      <div class="act rv d1"><div class="lbl">что я сделала 🛠</div><h3>Сегменты и воронка</h3><ul><li>3 сегмента: до 200 млн оборота, 300 млн–1 млрд, от 1 млрд — у каждого своя боль</li><li>рилс → кодовое слово → директ → лендинг → бот → 2 недели прогрева → разбор</li><li>первая версия за 2 недели, за год — 30+ лид-магнитов</li></ul></div>
+      <div class="act hot rv d2"><div class="lbl">стало 🔥</div><div class="big"><span data-count="80">80</span><small>до 70–80 записей на разбор в месяц</small></div><ul style="margin-top:16px"><li>5–7 сделок в месяц</li><li>30–40 номеров в день</li><li>60–70% из комментария доходили до номера</li></ul></div>
+    </div>
+
+    <div class="ba-wrap">
+      <div class="ba rv" id="ba">
+        <img src="img/case/after.jpg" alt="Профиль после: 30,8 тыс. подписчиков">
+        <img class="top" src="img/case/before.jpg" alt="Профиль до: 9 873 подписчика">
+        <span class="l">до</span><span class="r">после</span>
+        <div class="bar"></div><div class="knob">⇆</div>
+      </div>
+      <div class="ba-side rv d1">
+        <div class="delta">×3</div>
+        <h3>подписчиков за счёт контента под каждый сегмент</h3>
+        <p>Потяни ползунок: слева профиль до, справа — после. Один рилс «Самый быстрый способ вырасти в строительстве» дал 1 404 комментария и +4 255 подписчиков за месяц.</p>
+      </div>
+    </div>
+
+    <p class="hint rv">листай скрины →</p>
+    <div class="strip" id="strip">
+      <div class="shot"><img src="img/case/car1.jpg" alt="Карусель" loading="lazy"><div class="cap"><b>1 404</b> комментария под одной каруселью</div></div>
+      <div class="shot"><img src="img/case/reel.jpg" alt="Рилс 280 тыс." loading="lazy"><div class="cap"><b>280 тыс.</b> просмотров у рилса</div></div>
+      <div class="shot"><img src="img/case/car2.jpg" alt="Карусель" loading="lazy"><div class="cap"><b>1 208</b> комментариев — «моя главная ошибка»</div></div>
+      <div class="shot wide"><img src="img/case/scheme.jpg" alt="Схема воронки" loading="lazy"><div class="cap"><b>Бот в директе</b> — кодовое слово сразу отдаёт материал</div></div>
+      <div class="shot"><img src="img/case/car3.jpg" alt="Карусель" loading="lazy"><div class="cap"><b>1 071</b> комментарий — «большинство НЕ строители»</div></div>
+      <div class="shot wide"><img src="img/case/miro.jpg" alt="Воронка в Miro" loading="lazy"><div class="cap"><b>Вся воронка</b> на одной доске</div></div>
+      <div class="shot wide"><img src="img/case/reach.jpg" alt="Охваты" loading="lazy"><div class="cap"><b>+4 255</b> подписчиков за месяц</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE 2 -->
+<section class="italy">
+  <div class="wrap ital-grid">
+    <div class="fan rv" id="fan">
+      <div class="p p1"><img src="img/case/it1.jpg" alt="+42% просмотров" loading="lazy"></div>
+      <div class="p p2"><img src="img/case/it2.jpg" alt="80 218 просмотров за 30 дней" loading="lazy"></div>
+      <div class="p p3"><img src="img/case/it3.jpg" alt="Комментарии под постами" loading="lazy"></div>
+    </div>
+    <div>
+      <div class="kicker rv">кейс №2 · свежий</div>
+      <h2 class="rv">Поступление в Италию: <span class="it">месячный план за 2 недели</span></h2>
+      <p class="lead rv d1">Работаем с 14 октября 2026. За первый месяц собрала воронку на лид-магнитах — и план по заявкам, который раньше не закрывали, перевыполнили за две недели.</p>
+      <div class="stat-list">
+        <div class="stat rv"><b>+<span data-count="200">200</span></b><span>заявок</span></div>
+        <div class="stat rv d1"><b><span data-count="80">80</span> тыс.</b><span>просмотров за 30 дней</span></div>
+        <div class="stat rv d2"><b><span data-count="62">62</span>%</b><span>просмотров — новые люди</span></div>
+        <div class="stat rv d3"><b>+<span data-count="42">42</span>%</b><span>просмотров неделя к неделе</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="revs">
+  <div class="wrap">
+    <div class="rev-top">
+      <div>
+        <div class="kicker rv" style="color:#ffb8c8">отзывы</div>
+        <h2 class="rv">«Она просто <span class="it">фея этого юнита</span>»</h2>
+        <p class="lead rv d1">Результаты и отзывы о моей работе бизнес-тренером по маркетингу в компании Михаила Дашкиева. Например: «за 2 часа мы решили проблему, которую я не мог решить 3 месяца». Нажми на любой — откроется крупно.</p>
+        <div class="rating rv d2" id="rating"><img src="img/rev/rating.jpg" alt="Рейтинг инструкторов, март 2021: 1 место — Шивякова Юлия"><div class="circ"></div><span class="me">это я 👑</span></div>
+      </div>
+      <div class="rv d2"><div class="phone"><div class="notch"></div><div class="sl"><img src="img/rev/p1.jpg" alt="Отзывы в Telegram"><img src="img/rev/p2.jpg" alt="Отзывы в Telegram"><img src="img/rev/p3.jpg" alt="Отзывы в Telegram"><img src="img/rev/p4.jpg" alt="Отзывы в Telegram"><img src="img/rev/p5.jpg" alt="Отзывы в Telegram"></div><div class="dots"><i></i><i></i><i></i><i></i><i></i></div></div><p class="phone-cap">отзывы в Telegram-канале Units</p></div>
+    </div>
+  </div>
+  <div class="row" id="row1"><img src="img/rev/r1.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r2.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r3.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r4.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r5.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r6.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r7.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r8.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r1.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r2.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r3.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r4.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r5.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r6.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r7.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r8.jpg" alt="Отзыв после сессии" loading="lazy"></div>
+  <div class="row rev" id="row2"><img src="img/rev/r9.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r10.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r11.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r12.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r13.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r14.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r15.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r9.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r10.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r11.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r12.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r13.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r14.jpg" alt="Отзыв после сессии" loading="lazy"><img src="img/rev/r15.jpg" alt="Отзыв после сессии" loading="lazy"></div>
+</section>
+
+<!-- HOW -->
+<section>
+  <div class="wrap how-grid">
+    <div>
+      <div class="kicker rv">как начнём</div>
+      <h2 class="rv">Три шага <span class="it">до первой встречи</span></h2>
+      <div class="steps" id="steps"><div class="fill" id="fill"></div>
+        <div class="step"><div class="n">1</div><div><h3>Анкета</h3><p>Пара минут. Ответы сразу уходят мне в Telegram.</p></div></div>
+        <div class="step"><div class="n">2</div><div><h3>Консультация · <span class="price">5 000 ₽</span></h3><p>Около полутора часов. Разбираю вашу воронку и откуда сейчас приходят продажи. На выходе — карта узких мест: схема воронки и 3–5 мест, где теряются клиенты, по порядку, с чего начать.</p></div></div>
+        <div class="step"><div class="n">3</div><div><h3>Сопровождение</h3><p>1,5 месяца, 6 созвонов раз в неделю: стратегия, сценарии воронок, смыслы лид-магнитов, разбор результатов. Решите за 7 дней после консультации — засчитаю 5 000 ₽ в сопровождение.</p></div></div>
+      </div>
+      <div class="quote rv"><span class="it">Я достаточно занята и уверена в своей экспертности. Я не прохожу собеседования, я захожу как специалист</span><small>поэтому бесплатных разборов и созвонов «познакомиться» нет</small></div>
+    </div>
+    <div class="how-photo"><img src="img/work.jpg" alt="Юлия" class="rv"></div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-sec" id="anketa">
+  <div class="wrap">
+    <div class="kicker rv">анкета</div>
+    <h2 class="rv">Давайте <span class="it">знакомиться</span> 💘</h2>
+    <div class="form-grid">
+      <form id="f" novalidate class="rv">
+        <div id="fields">
+          <div class="prog"><i id="pg"></i></div>
+          <div class="field"><label class="q" for="name">Как вас зовут?</label><input type="text" id="name" autocomplete="given-name"></div>
+          <div class="field"><label class="q" for="contact">Ник в Telegram или телефон <small>— сюда я напишу</small></label><input type="text" id="contact" placeholder="@nick"></div>
+          <div class="field"><label class="q" for="niche">Чем занимаетесь и что продаёте?</label><textarea id="niche" placeholder="Например: психолог, курс по тревожности за 30 000 ₽"></textarea></div>
+          <div class="field"><span class="q">Откуда сейчас приходят клиенты? <small>можно несколько</small></span>
+            <div class="chips">
+              <label><input type="checkbox" name="src" value="Instagram"><span>Instagram</span></label>
+              <label><input type="checkbox" name="src" value="Telegram"><span>Telegram</span></label>
+              <label><input type="checkbox" name="src" value="Сарафан"><span>сарафан</span></label>
+              <label><input type="checkbox" name="src" value="Реклама"><span>реклама</span></label>
+              <label><input type="checkbox" name="src" value="Пока ниоткуда"><span>пока ниоткуда 🙈</span></label>
+            </div></div>
+          <div class="field"><label class="q" for="pain">Что сейчас не так с продажами?</label><textarea id="pain" placeholder="Своими словами, как подруге"></textarea></div>
+          <div class="field"><span class="q">Консультация платная — 5 000 ₽. Ок?</span>
+            <div class="chips">
+              <label><input type="radio" name="ok" value="Да, готов(а)"><span>да, готов(а) 💸</span></label>
+              <label><input type="radio" name="ok" value="Сначала хочу задать вопрос"><span>сначала задам вопрос</span></label>
+            </div></div>
+          <label class="agree"><input type="checkbox" id="agree"><span>Даю <a href="soglasie.html" target="_blank">согласие на обработку персональных данных</a> и принимаю <a href="politika.html" target="_blank">политику обработки персональных данных</a></span></label>
+          <div class="err" id="err">Заполните имя, контакт, чем занимаетесь, ответ про оплату и поставьте галочку 🙏</div>
+          <button class="btn" type="submit" id="send" style="width:100%;justify-content:center">Отправить анкету <span class="h">🏹</span></button>
+        </div>
+        <div class="done" id="done">
+          <div class="bigh">💘</div>
+          <h3>Почти готово!</h3>
+          <p id="doneText">Нажмите кнопку — откроется чат с Юлией, текст анкеты уже будет там, просто отправьте.</p>
+          <div class="btns">
+            <a class="btn" id="tgBtn" href="https://t.me/Shivyakovaylia" target="_blank" rel="noopener">Отправить анкету Юле в Telegram</a>
+            <a class="btn ghost" href="https://t.me/voronki_na_million" target="_blank" rel="noopener">А пока — канал «Воронки на миллион»</a>
+          </div>
+        </div>
+      </form>
+      <div class="side rv d1">
+        <img src="img/table.jpg" alt="Юлия">
+        <div class="card"><h3>Что будет дальше</h3><ol><li>Читаю анкету и пишу вам в Telegram</li><li>Согласуем дату и время</li><li>Созвон 1,5 часа: консультация, ответы на ваши вопросы и карта узких мест вашей воронки. А если воронки пока нет — схема, с чего её начать</li></ol></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap"><div>Юлия · маркетолог-купидон 🏹 воронки продаж<br><span style="opacity:.7">ИП Шивякова Юлия Андреевна · ИНН 233502963206</span><br><a href="politika.html">Политика обработки персональных данных</a> · <a href="soglasie.html">Согласие на обработку</a></div><div><a href="https://t.me/Shivyakovaylia">Telegram</a> · <a href="https://t.me/voronki_na_million">канал</a> · <a href="https://instagram.com/my.twinkles">Instagram</a></div></div></footer>
+
+<a class="btn mob-cta" id="mobCta" href="#anketa">Хочу на консультацию <span class="h">💘</span></a>
+<div class="lb" id="lb"><img alt=""></div>
+
+<script>
+// Куда уходит заявка: "telegram" — человек сам отправляет готовый текст Юле в личку (сейчас);
+// "bot" — заявка сразу в @MYTWINKLES_BOT через сервер (потом, когда будет Yandex Cloud).
+const MODE = "telegram", BOT_ENDPOINT = "", TG_USER = "Shivyakovaylia";
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// rotating niche word
+const words=["экспертов","психологов","онлайн-школы","юристов","наставников","косметологов"];let wi=0;const rot=document.getElementById('rot');
+if(!reduce)setInterval(()=>{wi=(wi+1)%words.length;rot.textContent=words[wi];rot.classList.remove('swap');void rot.offsetWidth;rot.classList.add('swap')},2200);
+
+// floating hearts
+const H=document.getElementById('hearts');
+if(!reduce)for(let i=0;i<16;i++){const s=document.createElement('span');s.textContent=['💘','❤','🤍','💗'][i%4];s.style.left=Math.random()*100+'%';s.style.fontSize=(14+Math.random()*20)+'px';s.style.animationDuration=(9+Math.random()*10)+'s';s.style.animationDelay=(-Math.random()*15)+'s';H.appendChild(s)}
+
+// marquee duplicate
+
+
+// reviews rows
+const revs=[...Array(15)].map((_,i)=>`img/rev/r${i+1}.jpg`);
+const fill=(el,list)=>{const html=list.map(s=>`<img src="${s}" alt="Отзыв после сессии" loading="lazy">`).join('');el.innerHTML=html+html};
+
+const lb=document.getElementById('lb');
+document.querySelectorAll('.row img').forEach(i=>i.onclick=()=>{lb.querySelector('img').src=i.src;lb.classList.add('on')});
+lb.onclick=()=>lb.classList.remove('on');
+
+// reveal + counters
+const count=el=>{const t=+el.dataset.count,suf=el.dataset.suf||'',d=1400,st=performance.now();
+  const f=n=>{const p=Math.min(1,(n-st)/d),e=1-Math.pow(1-p,3);el.textContent=Math.round(t*e).toLocaleString('ru-RU')+suf;if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target;t.classList.add('in');
+  t.querySelectorAll('[data-count]').forEach(count);if(t.dataset.count)count(t);io.unobserve(t)}),{threshold:.18});
+document.querySelectorAll('.rv,.step,#fan,#rating').forEach(e=>io.observe(e));
+document.querySelectorAll('[data-count]').forEach(e=>{if(!e.closest('.rv'))io.observe(e)});
+
+// flip on tap
+document.querySelectorAll('.flip').forEach(c=>c.addEventListener('click',()=>c.classList.toggle('on')));
+
+// before/after
+const ba=document.getElementById('ba'),top_=ba.querySelector('.top'),bar=ba.querySelector('.bar'),knob=ba.querySelector('.knob');
+const setBA=x=>{const r=ba.getBoundingClientRect();let p=Math.max(0,Math.min(1,(x-r.left)/r.width))*100;top_.style.clipPath=`inset(0 ${100-p}% 0 0)`;bar.style.left=knob.style.left=p+'%'};
+let drag=false;ba.addEventListener('pointerdown',e=>{drag=true;ba.setPointerCapture(e.pointerId);setBA(e.clientX)});
+ba.addEventListener('pointermove',e=>{if(drag)setBA(e.clientX)});ba.addEventListener('pointerup',()=>drag=false);
+// little teaser wiggle when it appears
+new IntersectionObserver((es,o)=>{if(es[0].isIntersecting&&!reduce){o.disconnect();const r=ba.getBoundingClientRect();let t0=performance.now();
+  const w=n=>{const p=(n-t0)/1600;if(p>1){setBA(r.left+r.width*.5);return}setBA(r.left+r.width*(.5+Math.sin(p*Math.PI*2)*.3));requestAnimationFrame(w)};requestAnimationFrame(w)}},{threshold:.6}).observe(ba);
+
+// drag-scroll strip on desktop
+const st=document.getElementById('strip');let sx=0,sl=0,dn=false;
+st.addEventListener('mousedown',e=>{dn=true;sx=e.pageX;sl=st.scrollLeft;st.style.cursor='grabbing'});
+addEventListener('mouseup',()=>{dn=false;st.style.cursor='grab'});
+st.addEventListener('mousemove',e=>{if(dn){e.preventDefault();st.scrollLeft=sl-(e.pageX-sx)}});
+
+// scroll effects: hero parallax, steps line, mobile cta
+const hero=document.getElementById('heroImg'),stepsEl=document.getElementById('steps'),fillEl=document.getElementById('fill'),mob=document.getElementById('mobCta'),form=document.getElementById('anketa');
+addEventListener('scroll',()=>{const y=scrollY;if(!reduce)hero.style.transform=`scale(1.08) translateY(${y*.06}px)`;
+  const r=stepsEl.getBoundingClientRect(),p=Math.max(0,Math.min(1,(innerHeight*.7-r.top)/r.height));fillEl.style.height=(p*(r.height-20))+'px';
+  const fr=form.getBoundingClientRect();mob.classList.toggle('on',y>innerHeight*.8&&fr.top>innerHeight)},{passive:true});
+
+// form progress
+const f=document.getElementById('f'),pg=document.getElementById('pg');
+const v=id=>document.getElementById(id).value.trim();
+const progress=()=>{const n=[v('name'),v('contact'),v('niche'),f.querySelector('[name=src]:checked'),v('pain'),f.querySelector('[name=ok]:checked'),document.getElementById('agree').checked].filter(Boolean).length;pg.style.width=(n/7*100)+'%'};
+f.addEventListener('input',progress);f.addEventListener('change',progress);
+
+const burst=(x,y)=>{if(reduce)return;for(let i=0;i<24;i++){const s=document.createElement('span');s.className='burst';s.textContent=['💘','❤','🏹','💗','✨'][i%5];s.style.left=x+'px';s.style.top=y+'px';
+  const a=Math.random()*Math.PI*2,d=120+Math.random()*200;s.style.setProperty('--x',Math.cos(a)*d+'px');s.style.setProperty('--y',Math.sin(a)*d-80+'px');s.style.setProperty('--r',(Math.random()*360)+'deg');document.body.appendChild(s);setTimeout(()=>s.remove(),1500)}};
+
+f.addEventListener('submit',async e=>{e.preventDefault();
+  const ok=(f.querySelector('input[name=ok]:checked')||{}).value;
+  const src=[...f.querySelectorAll('input[name=src]:checked')].map(x=>x.value).join(', ');
+  if(!v('name')||!v('contact')||!v('niche')||!ok||!document.getElementById('agree').checked){document.getElementById('err').style.display='block';return}
+  const data={name:v('name'),contact:v('contact'),niche:v('niche'),src:src||'—',pain:v('pain')||'—',ok};
+  const text=`Привет, Юля! Анкета на консультацию 🏹\n\nИмя: ${data.name}\nКонтакт: ${data.contact}\nЧем занимаюсь: ${data.niche}\nКлиенты сейчас: ${data.src}\nЧто не так с продажами: ${data.pain}\nКонсультация 5 000 ₽: ${data.ok}`;
+  const b=document.getElementById('send').getBoundingClientRect();burst(b.left+b.width/2,b.top);
+  if(MODE==="bot"&&BOT_ENDPOINT){
+    try{const r=await fetch(BOT_ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});if(!r.ok)throw 0}
+    catch(_){alert('Не получилось отправить. Напишите Юле в Telegram: @'+TG_USER);return}
+    document.querySelector('#done h3').textContent='Анкета у Юли!';
+    document.getElementById('doneText').textContent='Напишу вам в Telegram, и мы согласуем дату и время.';
+    document.getElementById('tgBtn').style.display='none';
+  }else{
+    const link=`https://t.me/${TG_USER}?text=${encodeURIComponent(text)}`;
+    document.getElementById('tgBtn').href=link;
+    try{navigator.clipboard&&navigator.clipboard.writeText(text)}catch(_){}
+    window.open(link,'_blank');
+  }
+  document.getElementById('fields').style.display='none';document.getElementById('done').style.display='block';
+});
+// показываем анимации появления только когда скрипт точно работает
+const showIn=()=>document.querySelectorAll('.rv:not(.in),.step:not(.in),#fan:not(.in),#rating:not(.in)').forEach(t=>{const r=t.getBoundingClientRect();if(r.top<innerHeight*.92){t.classList.add('in');t.querySelectorAll('[data-count]').forEach(count)}});
+addEventListener('scroll',showIn,{passive:true});addEventListener('resize',showIn);
+document.documentElement.classList.add('js');showIn();
+// страховка: если браузер не сообщает о прокрутке — просто показываем всё
+const guard=setInterval(()=>{if(document.querySelector('.rv.in')){clearInterval(guard);return}if(scrollY>innerHeight*.6){document.documentElement.classList.remove('js');clearInterval(guard)}},1500);
+</script>
+</body>
+</html>
